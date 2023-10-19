@@ -31,7 +31,7 @@ public class ExampleTests
             .BuildServiceProvider();
 
         var factory = serviceProvider.GetService<ILoggerFactory>();
-        logger = factory.CreateLogger<ExampleTests>();
+        logger = factory!.CreateLogger<ExampleTests>();
     }
 
     [TestCleanup]
