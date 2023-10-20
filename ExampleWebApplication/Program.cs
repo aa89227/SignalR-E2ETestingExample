@@ -6,10 +6,6 @@ builder.Services.AddSignalR(options =>
 {
     options.EnableDetailedErrors = true;
 });
-builder.Services.AddResponseCompression(options =>
-{
-    options.EnableForHttps = true;
-});
 builder.Services.AddLogging(builder =>
 {
     builder.AddSimpleConsole(c =>
@@ -20,7 +16,6 @@ builder.Services.AddLogging(builder =>
     builder.SetMinimumLevel(LogLevel.Trace);
 });
 var app = builder.Build();
-app.UseResponseCompression();
 app.MapHub<ExampleHub>("/examplehub");
 
 app.Run();
