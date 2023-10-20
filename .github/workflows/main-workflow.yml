@@ -23,23 +23,23 @@ jobs:
     - name: Build
       run: dotnet build --no-restore
     - name: Test1
-      run: dotnet test --no-build --verbosity detailed
+      run: dotnet test --no-build --verbosity normal --logger "console;verbosity=detailed"
     - name: Test2
-      run: dotnet test --no-build --verbosity detailed
+      run: dotnet test --no-build --verbosity normal --logger "console;verbosity=detailed"
     - name: Test3
-      run: dotnet test --no-build --verbosity detailed
+      run: dotnet test --no-build --verbosity normal --logger "console;verbosity=detailed"
     - name: Test4
-      run: dotnet test --no-build --verbosity detailed
+      run: dotnet test --no-build --verbosity normal --logger "console;verbosity=detailed" 
     - name: Test5
-      run: dotnet test --no-build --verbosity detailed
+      run: dotnet test --no-build --verbosity normal --logger "console;verbosity=detailed"
     - name: Test6
-      run: dotnet test --no-build --verbosity detailed
+      run: dotnet test --no-build --verbosity normal --logger "console;verbosity=detailed"
     - name: Test7
-      run: dotnet test --no-build --verbosity detailed
+      run: dotnet test --no-build --verbosity normal --logger "console;verbosity=detailed"
     - name: Test8
-      run: dotnet test --no-build --verbosity detailed
+      run: dotnet test --no-build --verbosity normal --logger "console;verbosity=detailed"
     - name: Test9
-      run: dotnet test --no-build --verbosity detailed
+      run: dotnet test --no-build --verbosity normal --logger "console;verbosity=detailed"
     - name: Test10
-      run: dotnet test --no-build --verbosity detailed
+      run: dotnet test --no-build --verbosity normal --logger "console;verbosity=detailed"
 
